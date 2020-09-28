@@ -2,21 +2,31 @@ function quad(a,b,c) {
     var D=b*b-4*a*c;
     var x1;
     var x2;
-    
-    if (a==0) {
+
+    if (a==0 && b==0) {
+        return "Корней уравнения нет!";
+    }
+
+    else if (a==0) {
         x1=(-c/b);
-        return "Дискриминант D=" + D + "\nКорень уравнения:\nХ1=" + x1.toFixed(1);
+        return "Дискриминант D=" + D + "\nКорень уравнения:\nХ1=" + x1.toFixed(2);
+    }
+
+    else if (c==0) {
+        x1=0;
+        x2=-b/a;
+        return "Дискриминант D=" + D + "\nКорни уравнения:\nХ1=" + x1.toFixed(2) + "\nX2=" + x2.toFixed(2);
     }
 
     else if (D>0) {
         x1=(-b+Math.sqrt(D))/2*a;
         x2=(-b-Math.sqrt(D))/2*a;
-        return "Дискриминант D=" + D + "\nКорни уравнения:\nХ1=" + x1.toFixed(1) + "\nX2=" + x2.toFixed(1);
+        return "Дискриминант D=" + D + "\nКорни уравнения:\nХ1=" + x1.toFixed(2) + "\nX2=" + x2.toFixed(2);
     }
 
     else if (D==0) {
         x1=-b/(2*a);
-        return "Дискриминант D=" + D + "\nКорень уравнения:\nХ1=" + x1.toFixed(1);
+        return "Дискриминант D=" + D + "\nКорень уравнения:\nХ1=" + x1.toFixed(2);
     }
 
     else if (D<0) {
