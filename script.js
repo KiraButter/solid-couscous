@@ -7,6 +7,10 @@ function quad(a,b,c) {
         return "Корней уравнения нет!";
     }
 
+    else if (b==0 && c==0){
+        return "Корень уравнения:\nX1=0";
+    }
+
     else if (a==0) {
         x1=(-c/b);
         return "Дискриминант D=" + D + "\nКорень уравнения:\nХ1=" + x1.toFixed(2);
