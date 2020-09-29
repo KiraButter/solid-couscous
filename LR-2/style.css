@@ -43,8 +43,7 @@ pre {
 
 .braces {
   position: relative;
-  padding: .3em .5em;
-  margin-left: 1em;
+  text-align: center;
 }
 .braces::before,
 .braces::after,
