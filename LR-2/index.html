@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Практическая №2</title>
+</head>
+<body>
+    <h1>Решение системы уравнений</h1>
+    
+    <div class="braces">
+	
+		<div class="curly">
+			<input type="number" placeholder="a" id="a">X+
+			<input type="number" placeholder="b" id="b">Y = 
+						<input type="number" placeholder="c" id="c"><br><br>
+			<input type="number" placeholder="d" id="d">X+
+			<input type="number" placeholder="e" id="e">Y = 
+						<input type="number" placeholder="f" id="f">
+		</div>
+		
+	</div>
+
+    <p> <input type="button" value="Посчитать" onclick="prog();"></p>
+    
+    <div id="otvet" class="otvet">
+        <h2>Ответ:</h2>
+        <pre id="result"> </pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
