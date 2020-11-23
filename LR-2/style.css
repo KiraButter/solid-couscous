@@ -56,7 +56,7 @@ pre {
 }
 .braces::before,
 .braces::after {
-  left: 0;
+  left: 41%;
   border-left: 2px solid;
 }
 .braces::before {
@@ -69,7 +69,7 @@ pre {
 }
 .curly::before,
 .curly::after {
-  left: -.8em;
+  left: 40%;
   border-right: 2px solid;
 }
 .curly::before {
